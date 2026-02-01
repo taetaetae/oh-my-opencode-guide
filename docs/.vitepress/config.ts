@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Oh-My-OpenCode',
   description: 'OpenCode를 위한 멀티 에이전트 오케스트레이션 플러그인 - 한국어 가이드',
   
+  base: '/oh-my-opencode-guide/',
   lang: 'ko-KR',
   
   head: [
