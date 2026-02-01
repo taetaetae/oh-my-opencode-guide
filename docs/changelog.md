@@ -28,4 +28,4 @@
 
 새 버전이 릴리즈되면 이 문서도 업데이트됩니다.
 
-업데이트 방법은 [CLAUDE.md](https://github.com/YOUR_USERNAME/oh-my-opencode-guide/blob/main/CLAUDE.md)를 참고하세요.
+업데이트 방법은 [CLAUDE.md](https://github.com/taetaetae/oh-my-opencode-guide/blob/main/CLAUDE.md)를 참고하세요.

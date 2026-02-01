@@ -4,7 +4,7 @@ OpenCode를 위한 멀티 에이전트 오케스트레이션 플러그인 - 한�
 
 ## 🌐 온라인 문서
 
-[https://YOUR_USERNAME.github.io/oh-my-opencode-guide](https://YOUR_USERNAME.github.io/oh-my-opencode-guide)
+[https://taetaetae.github.io/oh-my-opencode-guide](https://taetaetae.github.io/oh-my-opencode-guide)
 
 ## 🚀 로컬 개발
 

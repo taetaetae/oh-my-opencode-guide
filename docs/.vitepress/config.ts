@@ -136,7 +136,7 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/YOUR_USERNAME/oh-my-opencode-guide/edit/main/docs/:path',
+      pattern: 'https://github.com/taetaetae/oh-my-opencode-guide/edit/main/docs/:path',
       text: '이 페이지 수정하기'
     }
   },
