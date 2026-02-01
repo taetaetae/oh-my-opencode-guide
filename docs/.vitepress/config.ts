@@ -27,7 +27,6 @@ export default defineConfig({
       {
         text: 'v3.2.1',
         items: [
-          { text: '변경 로그', link: '/changelog' },
           { text: 'GitHub', link: 'https://github.com/code-yeongyu/oh-my-opencode' }
         ]
       }

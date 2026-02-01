@@ -4,7 +4,7 @@ layout: home
 hero:
   name: Oh-My-OpenCode
   text: AI 개발팀을 손안에
-  tagline: OpenCode를 11개의 전문 AI 에이전트가 협력하는 멀티 에이전트 오케스트레이션 시스템으로 변환하세요
+  tagline: 하나의 AI가 아닌, 11개의 전문 에이전트가 협력하는 멀티 에이전트 시스템
   image:
     src: /hero-image.svg
     alt: Oh-My-OpenCode
@@ -17,41 +17,41 @@ hero:
       link: https://github.com/code-yeongyu/oh-my-opencode
 
 features:
+  - icon: 🎯
+    title: 두 가지 작업 모드
+    details: ulw 키워드로 빠르게, 또는 Tab → Prometheus 인터뷰로 정밀하게. 상황에 맞는 작업 방식을 선택하세요.
+    link: /guide/quickstart
+    linkText: 작업 모드 알아보기
+
   - icon: 🤖
-    title: 11개 전문 에이전트
-    details: Sisyphus, Oracle, Librarian 등 각자의 전문 분야를 가진 AI 에이전트들이 팀처럼 협력합니다.
+    title: 전문 에이전트 팀
+    details: Oracle은 아키텍처 상담, Librarian은 문서 조사, Explore는 코드 탐색. 각자의 전문성으로 협력합니다.
     link: /guide/agents
     linkText: 에이전트 알아보기
 
-  - icon: 🎯
-    title: 스킬 시스템
-    details: Git, Playwright, Frontend 등 전문 스킬을 로드하여 에이전트의 능력을 확장하세요.
-    link: /guide/skills
-    linkText: 스킬 알아보기
-
-  - icon: ⚡
-    title: 슬래시 명령어
-    details: /refactor, /deploy 등 반복 작업을 자동화하는 커스텀 워크플로우를 만드세요.
-    link: /guide/commands
-    linkText: 명령어 알아보기
-
   - icon: 🪝
-    title: 34개 훅
-    details: 파일 읽기, 도구 실행 등 다양한 시점에 자동으로 동작하는 규칙을 설정하세요.
+    title: 자동 컨텍스트 주입
+    details: 파일을 읽으면 AGENTS.md가 자동 주입되고, 키워드를 감지해 모드가 전환됩니다. 훅이 알아서 처리합니다.
     link: /guide/hooks
     linkText: 훅 알아보기
 
+  - icon: 📝
+    title: 프로젝트별 규칙
+    details: .rules/ 폴더에 코딩 규칙을 정의하면, 해당 파일을 다룰 때 자동으로 적용됩니다.
+    link: /guide/rules
+    linkText: Rules 알아보기
+
+  - icon: ⚡
+    title: 커스텀 워크플로우
+    details: /deploy, /refactor 같은 슬래시 명령어로 반복 작업을 자동화하세요. 직접 만들 수도 있습니다.
+    link: /guide/commands
+    linkText: 명령어 알아보기
+
   - icon: 🔌
-    title: MCP 통합
-    details: 웹 검색, 데이터베이스, GitHub 등 외부 서비스와 연동하여 에이전트 능력을 확장하세요.
+    title: MCP로 능력 확장
+    details: 웹 검색, 데이터베이스, GitHub API 등 외부 서비스를 연결해 에이전트의 능력을 확장하세요.
     link: /guide/mcp
     linkText: MCP 알아보기
-
-  - icon: ⚙️
-    title: 유연한 설정
-    details: 에이전트 모델, 동시성, 훅 등 모든 것을 프로젝트에 맞게 커스터마이징하세요.
-    link: /guide/configuration
-    linkText: 설정 알아보기
 ---
 
 <style>
@@ -61,43 +61,50 @@ features:
 }
 </style>
 
+## 💡 Oh-My-OpenCode가 특별한 이유
+
+### 🎭 하나의 AI vs 전문가 팀
+
+일반적인 AI 어시스턴트는 하나의 AI가 모든 것을 처리합니다. Oh-My-OpenCode는 다릅니다:
+
+```
+일반 AI                      Oh-My-OpenCode
+┌──────────┐                ┌─────────────────────────────┐
+│          │                │ Sisyphus: 작업 분배         │
+│  하나의  │                │ Oracle: 아키텍처 상담       │
+│   AI     │       →        │ Librarian: 문서/라이브러리  │
+│          │                │ Explore: 코드베이스 탐색    │
+│          │                │ ... 11개 전문 에이전트      │
+└──────────┘                └─────────────────────────────┘
+```
+
+### ⚡ 두 가지 작업 모드
+
+**Ultrawork 모드** - 빠른 작업
+```bash
+ulw 로그인 기능 추가해줘
+# → 자동으로 탐색 → 계획 → 구현 → 검증
+```
+
+**Prometheus 모드** - 정밀한 작업
+```
+Tab 키 → 인터뷰 → 계획 생성 → /start-work
+# → 요구사항을 명확히 하고 체계적으로 진행
+```
+
+### 🪝 알아서 처리되는 것들
+
+- 파일 읽을 때 **AGENTS.md 자동 주입**
+- `ulw` 키워드 감지 시 **Ultrawork 모드 전환**
+- 컨텍스트 한계 도달 시 **자동 컴팩션**
+- 백그라운드 작업 완료 시 **OS 알림**
+
 ## 🚀 30초 만에 시작하기
 
 ```bash
 # 설치
 bunx oh-my-opencode install
 
-# 사용 - Ultrawork 모드
-ulw 로그인 기능 추가해줘
-
-# 또는 Prometheus 모드 (Tab 키 → 인터뷰 → /start-work)
+# 바로 사용
+ulw README에 설치 가이드 추가해줘
 ```
-
-## 🏗️ 시스템 아키텍처
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    🧠 계획 레이어                            │
-│  Prometheus (전략 기획) + Metis (갭 분석) + Momus (검증)     │
-└─────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────┐
-│                    🎯 오케스트레이션 레이어                   │
-│  Atlas (마스터 오케스트레이터) - 작업 분배 및 검증            │
-└─────────────────────────────────────────────────────────────┘
-                              ↓
-┌─────────────────────────────────────────────────────────────┐
-│                    ⚙️ 실행 레이어                            │
-│  Sisyphus-Junior + 전문 에이전트들 (Oracle, Librarian 등)   │
-└─────────────────────────────────────────────────────────────┘
-```
-
-## 📊 주요 기능 요약
-
-| 기능 | 개수 | 설명 |
-|------|------|------|
-| **에이전트** | 11개 | 각각 전문 분야를 가진 AI 에이전트 |
-| **훅** | 34개 | 동작 커스터마이징을 위한 라이프사이클 훅 |
-| **도구** | 20+개 | LSP, AST-Grep, 위임 도구 등 |
-| **내장 MCP** | 3개 | 웹검색, 문서조회, GitHub 코드검색 |
-| **내장 스킬** | 4개 | Git, Playwright, Frontend, Browser |
