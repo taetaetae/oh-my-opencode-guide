@@ -1,0 +1,16 @@
+{
+  "documentedVersion": "3.2.1",
+  "sourceRepo": "https://github.com/code-yeongyu/oh-my-opencode",
+  "lastUpdated": "2025-02-01",
+  "lastCommit": "491df05",
+  "changelog": [
+    "초기 문서 생성",
+    "11개 에이전트 시스템 문서화",
+    "4개 내장 스킬 문서화",
+    "34개 훅 시스템 문서화",
+    "슬래시 명령어 시스템 문서화",
+    "MCP 통합 가이드 작성",
+    "설정 옵션 전체 문서화",
+    "8개 워크플로우 예제 작성"
+  ]
+}

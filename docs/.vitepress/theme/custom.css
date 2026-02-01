@@ -1,0 +1,216 @@
+/* 커스텀 CSS 변수 및 스타일 */
+
+:root {
+  /* 브랜드 컬러 - 인디고/퍼플 계열 */
+  --vp-c-brand-1: #6366f1;
+  --vp-c-brand-2: #818cf8;
+  --vp-c-brand-3: #4f46e5;
+  --vp-c-brand-soft: rgba(99, 102, 241, 0.14);
+
+  /* 홈페이지 히어로 그라데이션 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  
+  --vp-home-hero-image-background-image: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  --vp-home-hero-image-filter: blur(68px);
+}
+
+.dark {
+  --vp-c-brand-1: #818cf8;
+  --vp-c-brand-2: #a5b4fc;
+  --vp-c-brand-3: #6366f1;
+}
+
+/* 홈페이지 히어로 섹션 */
+.VPHero .name {
+  font-size: 4rem !important;
+  font-weight: 800 !important;
+}
+
+.VPHero .text {
+  font-size: 1.5rem !important;
+  color: var(--vp-c-text-2);
+}
+
+.VPHero .tagline {
+  font-size: 1.2rem !important;
+  line-height: 1.6;
+}
+
+/* 피처 카드 스타일 */
+.VPFeature {
+  border-radius: 16px !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.dark .VPFeature:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.VPFeature .icon {
+  font-size: 2rem;
+}
+
+/* 커스텀 컨테이너 스타일 */
+.custom-block {
+  border-radius: 12px !important;
+  padding: 1.25rem !important;
+}
+
+.custom-block.tip {
+  background-color: rgba(99, 102, 241, 0.08);
+  border-color: var(--vp-c-brand-1);
+}
+
+.custom-block.warning {
+  background-color: rgba(234, 179, 8, 0.08);
+}
+
+.custom-block.danger {
+  background-color: rgba(239, 68, 68, 0.08);
+}
+
+.custom-block.info {
+  background-color: rgba(59, 130, 246, 0.08);
+}
+
+/* 코드 블록 스타일 */
+.vp-code-group .tabs label {
+  border-radius: 8px 8px 0 0;
+}
+
+div[class*='language-'] {
+  border-radius: 12px !important;
+}
+
+div[class*='language-']::before {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* 테이블 스타일 */
+.vp-doc table {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+.vp-doc tr:hover td {
+  background: var(--vp-c-bg-soft);
+}
+
+/* 사이드바 스타일 */
+.VPSidebar .group {
+  padding: 0.5rem 0;
+}
+
+.VPSidebarItem .text {
+  font-size: 0.9rem;
+}
+
+/* 네비게이션 스타일 */
+.VPNavBar {
+  backdrop-filter: blur(12px);
+}
+
+/* 버튼 스타일 */
+.VPButton.brand {
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPButton.brand:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.3);
+}
+
+.VPButton.alt {
+  border-radius: 12px !important;
+}
+
+/* 배지 스타일 */
+.VPBadge {
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+}
+
+/* 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-divider);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-3);
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.VPContent {
+  animation: fadeIn 0.3s ease;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+  .VPHero .name {
+    font-size: 2.5rem !important;
+  }
+  
+  .VPHero .text {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* 이모지 아이콘 크기 조정 */
+h2 .header-anchor::before,
+h3 .header-anchor::before {
+  content: none;
+}
+
+/* 커스텀 클래스 */
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
