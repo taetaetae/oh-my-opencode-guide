@@ -58,6 +58,14 @@ export default defineConfig({
             { text: 'MCP 통합', link: '/guide/mcp' },
             { text: 'Rules 파일', link: '/guide/rules' }
           ]
+        },
+        {
+          text: '활용 가이드',
+          items: [
+            { text: '베스트 프랙티스', link: '/guide/best-practices' },
+            { text: '팁과 트릭', link: '/guide/tips-and-tricks' },
+            { text: '문제 해결', link: '/guide/troubleshooting' }
+          ]
         }
       ],
       '/examples/': [
